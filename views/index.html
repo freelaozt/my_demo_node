@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .foor div:hover {
+        cursor: pointer;
+        color: #484847;
+        font-weight: 600;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+</style>
+
+<body>
+
+    <form action="/api/addUser" method="post" enctype="multipart/form-data">
+        <span>密码登录</span>
+        <span>请输入登录账户和密码</span>
+        <p><input type="text" autocomplete="off" placeholder="用户名" name="username" required /></p>
+        <p><input type="password" autocomplete="off" placeholder="登录密码" name="password" required maxlength="32" /></p>
+        <input type="submit" value="Submit" />
+    </form>
+    <div class="foor">
+        <div class="left"><span>忘记密码 ?</span></div>
+        <div class="right"><span>注册账户</span></div>
+    </div>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <form action="/api/addData" method="post" enctype="multipart/form-data">
+        <p>First name: <input type="text" name="fname" /></p>
+        <p>Last name: <input type="text" name="lname" /></p>
+        <input type="file" value="" name="img"/>
+        <input type="submit" value="Submit" />
+      </form>
+</body>
+
+</html>
